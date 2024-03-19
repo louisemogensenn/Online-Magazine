@@ -1,6 +1,5 @@
 
 /* Design, der gælder mange elementer */
-
  :root {
    --baggrundsfarve: #e1dbce;
    --knapfarve: #c1b6a4;
@@ -78,6 +77,25 @@
 
  /* ____________________________________________________________________________________ */
 
+
+ /* DESIGN AF TILMELD DIG */
+
+ /* Styling af overskrift */
+ h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: lighter;
+ }
+
+ /* Placering af inputfelter og tilgørende tekst samt tekstens udseende */
+ #formSectionId {
+  display: flex;
+  justify-content: left;
+  margin-left: 30%;
+  font-size: 25px;
+ }
+
+ /* Styling af inputfelternes og TILMELD-knappens størrelse og farver */
 
 
  main {
