@@ -1,16 +1,85 @@
-/**
- * file: css/css.css
- * purpose: styling
- **/
 
-/* Define variables in the :root */
+/* Design, der gælder mange elementer */
+
  :root {
-   --contrast: lime;
-   --backgr: #000;
+   --baggrundsfarve: #e1dbce;
+   --knapfarve: #c1b6a4;
+   --skriftfarve: #000;
  }
 
-/* Use your variables on elements */
+ body {
+  background-color: var(--baggrundsfarve);
+ }
+
+ a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0px 50px; /* Skaber luft mellem links */
+  text-decoration: none; /* Fjerner underline fra links */
+  color: inherit; /* Gør links sorte i stedte for blå */
+ }
+
+ a:hover {
+  cursor: pointer; /* Laver musen som pointer når den holdes over */
+ }
+ 
+ /* Design, der gælder mindre elementer */
+ #detSimpleBrødLogoId {
+  display: center;
+  width: 25%;
+  height: auto;
+ }
+
+ #menulinjeId {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+ }
+
+ /* DROP DOWN */
+
+ /* Styling af drop down-knap */
+ .dropLink {
+  color: var(--skriftfarve);
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+ }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* styling af drop down, der er skjult default */
+.dropdownIndhold {
+  display: none; /* Gør at den er skjult */
+  position: absolute; /* Gør at elementerne i menulinjen ikke flytter sig, når en drop down vises */
+  background-color: var(--knapfarve);
+  min-width: 160px;
+  /* z-index: 1; */
+}
+
+/* Links i dropdown */
+.dropdownIndhold a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 25px; /* Skriftstørrelsen på links i drop down */
+}
+
+/* Laver links i drop down med underline ved hover */
+.dropdownIndhold a:hover {text-decoration: underline;}
+
+/* Viser drop down ved hover */
+.dropdown:hover .dropdownIndhold {
+  display: block;
+}
+
+ /* ____________________________________________________________________________________ */
+
+
+
  main {
-   color: var(--contrast);
-   background-color: var(--backgr);
+  /* Hvad skal der stå her? */
  }
