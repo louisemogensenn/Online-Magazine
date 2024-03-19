@@ -19,6 +19,7 @@
 
  p {
   font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
  }
 
  a:hover {
@@ -28,7 +29,7 @@
  /* Design af logo */
  #detSimpleBrødLogoId {
   display: center;
-  width: 25%;
+  width: 20%;
   height: auto;
  }
 
@@ -36,6 +37,12 @@
   display: flex;
   justify-content: center;
   font-size: 30px;
+ }
+
+ #tilmeldDigId {
+  padding: 10px;
+  background-color: var(--knapfarve);
+  margin-top: -10px; /* Sørger for at 'knappen' stadig et på linje med resten i menulinjen*/
  }
 
  /* DROP DOWN */
@@ -82,16 +89,32 @@
 /* ____________________________________________________________________________________ */
 
 /* DESIGN AF INDEX */
- 
+h4 {
+  font-weight: lighter;
+}
+
+#overskriftIndexId {
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+}
+
+.underoverskriftIndexId {
+  margin-top: -2%;
+  font-weight: lighter;
+}
+
+
 /* ____________________________________________________________________________________ */
 
 /* DESIGN AF  HOW TO*/
 
 /* Opsætning af de tre øverste billeder */
+
 .tripleId {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 75%;
   height: auto;
   margin: 2% 5% 2% 10%;
 }
@@ -104,15 +127,24 @@ article {
 h2 {
   display: flex;
   justify-content: center;
+  margin-top: 3%;
 }
 
 /* ____________________________________________________________________________________ */
 
 /* DESIGN AF SURDEJSBOLLER*/
 
+#surdejsbollerId {
+  margin-top: 3%; /* Flytter overskriften OPSKRIFT PÅ SURDEJSBOLLER minimalt ned og væk fra menulinjen*/
+}
+
 /* ____________________________________________________________________________________ */
 
 /* STYLING AF TIPS & TRICKS*/
+
+  #togtArticleId {
+    margin-top: 3%; /* Flytter overskriften OPSKRIFT PÅ SURDEJSBOLLER minimalt ned og væk fra menulinjen*/
+  }
 
 /* ____________________________________________________________________________________ */
 
@@ -139,22 +171,53 @@ h2 {
 
  /* DESIGN AF TILMELD DIG */
 
- /* Styling af overskrift */
- h1 {
-  font-size: 50px;
-  font-weight: lighter;
- }
-
  /* Placering af inputfelter og tilgørende tekst samt tekstens udseende */
  #formSectionId {
   display: flex;
-  justify-content: left;
-  margin-left: 30%;
+  justify-content: center;
   font-size: 25px;
  }
 
  /* Styling af inputfelternes og TILMELD-knappens størrelse og farver */
 
+#formSectionId input[type="text"], #formSectionId input[type="number"], #formSectionId input[type="email"] {
 
- 
+  /* Ændrer baggrundsfarven */
+  background-color: var(--knapfarve);
+  
+  /* Ændrer tekstfarven*/
+  color: #000;
+  
+  /* Fjerner kantlinjer */
+  border: none;
+  
+  /* Gør tekstfeltet større eller mindre */
+  padding: 10px; /* Tilpas padding efter behov */
+}
+
+/* Ændrer farven på labelteksten */
+#formSectionId label {
+  color: var(--skriftfarve); /* Ændrer farven til mørkegrå */
+  font-size: smaller;
+
+}
+
+#formSectionId input {
+  
+}
+
+
+/* ____________________________________________________________________________________ */
+
+/* DESIGN AF KOMMER SNART*/
+
+.herClass {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold; /* Gør linket 'her!' tydeligt*/
+}
+
+#pId {
+  margin-top: 3%; /* Flytter overskriften OPSKRIFT PÅ SURDEJSBOLLER minimalt ned og væk fra menulinjen*/
+
+}
 /* ____________________________________________________________________________________ */
