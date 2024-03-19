@@ -1,5 +1,5 @@
 
-/* Design, der gælder mange elementer */
+/* Design, der gælder elementer i head */
  :root {
    --baggrundsfarve: #e1dbce;
    --knapfarve: #c1b6a4;
@@ -10,18 +10,22 @@
   background-color: var(--baggrundsfarve);
  }
 
- a {
+ a { /* Design af menulinjen */
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0px 50px; /* Skaber luft mellem links */
   text-decoration: none; /* Fjerner underline fra links */
   color: inherit; /* Gør links sorte i stedte for blå */
  }
 
+ p {
+  font-family: 'Courier New', Courier, monospace;
+ }
+
  a:hover {
   cursor: pointer; /* Laver musen som pointer når den holdes over */
  }
  
- /* Design, der gælder mindre elementer */
+ /* Design af logo */
  #detSimpleBrødLogoId {
   display: center;
   width: 25%;
@@ -53,7 +57,7 @@
 .dropdownIndhold {
   display: none; /* Gør at den er skjult */
   position: absolute; /* Gør at elementerne i menulinjen ikke flytter sig, når en drop down vises */
-  background-color: var(--knapfarve);
+  background-color: var(--knapfarve); /* Giver drop down en anden og mørkere farve*/
   min-width: 160px;
   /* z-index: 1; */
 }
@@ -75,14 +79,68 @@
   display: block;
 }
 
- /* ____________________________________________________________________________________ */
+/* ____________________________________________________________________________________ */
+
+/* DESIGN AF INDEX */
+ 
+/* ____________________________________________________________________________________ */
+
+/* DESIGN AF  HOW TO*/
+
+/* Opsætning af de tre øverste billeder */
+.tripleId {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin: 2% 5% 2% 10%;
+}
+
+article {
+  text-align: center;
+  margin: 0px 30%; 
+} 
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+/* ____________________________________________________________________________________ */
+
+/* DESIGN AF SURDEJSBOLLER*/
+
+/* ____________________________________________________________________________________ */
+
+/* STYLING AF TIPS & TRICKS*/
+
+/* ____________________________________________________________________________________ */
+
+/* STYLING AF AARHUS */
+
+#davidBreadHeadLogoId {
+  width: 40%;
+  height: auto;
+}
+
+.reference {
+  margin-top: 0%;
+}
+
+#jumboBakeryLogoId {
+  width: 40%;
+  height: auto;
+}
+
+/* ____________________________________________________________________________________ */
+
+/* ____________________________________________________________________________________ */
 
 
  /* DESIGN AF TILMELD DIG */
 
  /* Styling af overskrift */
  h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 50px;
   font-weight: lighter;
  }
@@ -98,6 +156,5 @@
  /* Styling af inputfelternes og TILMELD-knappens størrelse og farver */
 
 
- main {
-  /* Hvad skal der stå her? */
- }
+ 
+/* ____________________________________________________________________________________ */
