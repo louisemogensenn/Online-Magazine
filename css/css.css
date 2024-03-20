@@ -6,31 +6,30 @@
    --skriftfarve: #000;
  }
 
+ /* Sætter baggrundsfarven for alle sider */
  body {
   background-color: var(--baggrundsfarve);
  }
 
-  .menulinjeClass { /* Design af menulinjen */
+ /* Design af menulinjen */
+  .menulinjeClass { 
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0px 50px; /* Skaber luft mellem links */
   text-decoration: none; /* Fjerner underline fra links */
   color: inherit; /* Gør links sorte i stedte for blå */
  }
 
+ /* Default font og størrelse på al brødtekst */
  p {
   font-family: 'Courier New', Courier, monospace;
   font-size: 17px;
  }
-
- a:hover {
-  cursor: pointer; /* Laver musen som pointer når den holdes over */
- }
  
  /* Opsætning af logo */
  #detSimpleBrødLogoId {
-  display: center;
   width: 20%;
   height: auto;
+  margin-left: 3%; /* Rykker logoet minimalt ind mod midten*/
  }
 
  /* Opsætning af menulinje */
@@ -50,43 +49,26 @@
  /* Opsætning af de tre øverste billeder */
 
 .tripleClass {
-  display: flex;
-  justify-content: center;
   width: 75%;
   height: auto;
-  margin: 2% 10% 2% 13%;
+  margin: 2% 10% 2% 13%; /* Placering på sitet */
 }
 
  /* DROP DOWN */
 
- /* Styling af drop down */
- .dropLink {
-  color: var(--skriftfarve);
-  padding: 16px;
-  border: none;
-  cursor: pointer;
- }
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* styling af drop down, der er skjult default */
+/* Styling af drop down, der er skjult default */
 .dropdownIndhold {
   display: none; /* Gør at den er skjult */
   position: absolute; /* Gør at elementerne i menulinjen ikke flytter sig, når en drop down vises */
   background-color: var(--knapfarve); /* Giver drop down en anden og mørkere farve*/
-  min-width: 160px;
-  /* z-index: 1; */
 }
 
 /* Links i dropdown */
 .dropdownIndhold a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  color: var(--skriftfarve);
+  padding: 12px 16px; /* Sætter størrelsen på drop down-elementet (det der har farven --knapfarve)*/
+  text-decoration: none; /* Fjerner underline fra indholdet i dropdown default */
+  display: block; /* Indholdet i drop down visen oven på hinanden i stedte for ved siden af hinanden*/
   font-size: 25px; /* Skriftstørrelsen på links i drop down */
 }
 
@@ -97,7 +79,6 @@
 .dropdown:hover .dropdownIndhold {
   display: block;
 }
-
 /* ____________________________________________________________________________________ */
 
 /* DESIGN AF INDEX */
@@ -121,7 +102,7 @@
   align-items: center; /* Centrerer elementer vertikalt */
   text-decoration: none; /* Fjerner underline fra links */
   color: inherit; /* Gør links sorte i stedte for blå */
-  font-size: 35px;
+  font-size: 30px;
   max-width: fit-content; /* Sikrer at padding ikke dækker hele bunden fra venstre til højre */
   margin: 0 auto; /* Tilføjer margin til at centrere elementet i forhold til dets container */
 }
