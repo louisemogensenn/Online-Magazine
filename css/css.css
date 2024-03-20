@@ -10,7 +10,7 @@
   background-color: var(--baggrundsfarve);
  }
 
- a { /* Design af menulinjen */
+  .menulinjeClass { /* Design af menulinjen */
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0px 50px; /* Skaber luft mellem links */
   text-decoration: none; /* Fjerner underline fra links */
@@ -26,28 +26,40 @@
   cursor: pointer; /* Laver musen som pointer når den holdes over */
  }
  
- /* Design af logo */
+ /* Opsætning af logo */
  #detSimpleBrødLogoId {
   display: center;
   width: 20%;
   height: auto;
  }
 
+ /* Opsætning af menulinje */
  #menulinjeId {
   display: flex;
   justify-content: center;
   font-size: 30px;
  }
 
+ /* Opsætning af tilmeld dig i menulinjen*/
  #tilmeldDigId {
   padding: 10px;
   background-color: var(--knapfarve);
   margin-top: -10px; /* Sørger for at 'knappen' stadig et på linje med resten i menulinjen*/
  }
 
+ /* Opsætning af de tre øverste billeder */
+
+.tripleClass {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  height: auto;
+  margin: 2% 10% 2% 13%;
+}
+
  /* DROP DOWN */
 
- /* Styling af drop down-knap */
+ /* Styling af drop down */
  .dropLink {
   color: var(--skriftfarve);
   padding: 16px;
@@ -89,10 +101,6 @@
 /* ____________________________________________________________________________________ */
 
 /* DESIGN AF INDEX */
-h4 {
-  font-weight: lighter;
-}
-
 #overskriftIndexId {
   display: flex;
   justify-content: center;
@@ -104,20 +112,23 @@ h4 {
   font-weight: lighter;
 }
 
+/* Opsætning af tilmeld dig nederst på indexsiden */
+#indexTilmeldDigId {
+  padding: 10px;
+  background-color: var(--knapfarve);
+  display: flex;
+  justify-content: center; /* Justerer elementer til midten */
+  align-items: center; /* Centrerer elementer vertikalt */
+  text-decoration: none; /* Fjerner underline fra links */
+  color: inherit; /* Gør links sorte i stedte for blå */
+  font-size: 35px;
+  max-width: fit-content; /* Sikrer at padding ikke dækker hele bunden fra venstre til højre */
+  margin: 0 auto; /* Tilføjer margin til at centrere elementet i forhold til dets container */
+}
 
 /* ____________________________________________________________________________________ */
 
 /* DESIGN AF  HOW TO*/
-
-/* Opsætning af de tre øverste billeder */
-
-.tripleId {
-  display: flex;
-  justify-content: center;
-  width: 75%;
-  height: auto;
-  margin: 2% 5% 2% 10%;
-}
 
 article {
   text-align: center;
@@ -166,9 +177,6 @@ h2 {
 
 /* ____________________________________________________________________________________ */
 
-/* ____________________________________________________________________________________ */
-
-
  /* DESIGN AF TILMELD DIG */
 
  /* Placering af inputfelter og tilgørende tekst samt tekstens udseende */
@@ -179,31 +187,41 @@ h2 {
  }
 
  /* Styling af inputfelternes og TILMELD-knappens størrelse og farver */
-
 #formSectionId input[type="text"], #formSectionId input[type="number"], #formSectionId input[type="email"] {
 
   /* Ændrer baggrundsfarven */
   background-color: var(--knapfarve);
   
-  /* Ændrer tekstfarven*/
-  color: #000;
-  
   /* Fjerner kantlinjer */
   border: none;
   
   /* Gør tekstfeltet større eller mindre */
-  padding: 10px; /* Tilpas padding efter behov */
+  padding: auto; 
 }
 
 /* Ændrer farven på labelteksten */
 #formSectionId label {
-  color: var(--skriftfarve); /* Ændrer farven til mørkegrå */
+  color: var(--skriftfarve); 
   font-size: smaller;
+}
 
+#formSectionId {
+  text-align: center; /* Placerer knappen i midten */
+  
 }
 
 #formSectionId input {
-  
+  padding: 10px;
+  background-color: var(--knapfarve);
+  color: var(--skriftfarve);
+  font-size: 17px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center; /* Placerer knappen i midten */
+}
+
+#tilmeldDigPId {
+  text-align: center;
+  margin: 5%; 
 }
 
 
@@ -214,10 +232,14 @@ h2 {
 .herClass {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold; /* Gør linket 'her!' tydeligt*/
+  text-decoration: none; /* Fjerner underline fra links */
+  color: inherit; /* Gør links sorte i stedte for blå */
 }
 
 #pId {
-  margin-top: 3%; /* Flytter overskriften OPSKRIFT PÅ SURDEJSBOLLER minimalt ned og væk fra menulinjen*/
-
+  text-align: center;
+  margin: 3% 30%; 
 }
+
+
 /* ____________________________________________________________________________________ */
