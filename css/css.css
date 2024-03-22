@@ -66,6 +66,13 @@ Herunder kommer design af de enkelte sider med rækkefølgen
   margin-top: -10px; /* Sørger for at 'knappen' stadig et på linje med resten i menulinjen*/
  }
 
+  /* Opsætning af de tre øverste billeder */
+  .tripleClass {
+    width: 75%;
+    height: auto;
+    margin: 2% 10% 2% 13%; /* Placering på sitet */
+  }
+
  /* DROP DOWN ______________________________________________________________________________*/
 
 /* Styling af drop down, der er skjult default */
@@ -92,13 +99,6 @@ Herunder kommer design af de enkelte sider med rækkefølgen
   display: block;
 }
 
- /* Opsætning af de tre øverste billeder */
- .tripleClass {
-  width: 75%;
-  height: auto;
-  margin: 2% 10% 2% 13%; /* Placering på sitet */
-}
-
 /* ____________________________________________________________________________________ */
 
 /* DESIGN AF INDEX */
@@ -118,13 +118,11 @@ Herunder kommer design af de enkelte sider med rækkefølgen
   padding: 10px;
   background-color: var(--knapfarve);
   display: flex;
-  justify-content: center; /* Justerer elementer til midten */
-  align-items: center; /* Centrerer elementer vertikalt */
-  text-decoration: none; /* Fjerner underline fra links */
-  color: inherit; /* Gør links sorte i stedte for blå */
+  text-decoration: none; /* Fjerner underline fra tilmeld-'knap' */
+  color: inherit; /* Gør linket i 'knappen' sort i stedte for blå */
   font-size: 30px;
-  max-width: fit-content; /* Sikrer at padding ikke dækker hele bunden fra venstre til højre */
-  margin: 0 auto; /* Tilføjer margin til at centrere elementet i forhold til dets container */
+  max-width: fit-content; /* Sikrer at padding i 'knappen' ikke dækker hele bunden fra venstre til højre */
+  margin: 0 auto; /* Margin for at placere 'knappen' i midten */
 }
 
 /* ____________________________________________________________________________________ */
@@ -148,6 +146,10 @@ h2 {
 
 #surdejsbollerId {
   margin-top: 3%; /* Flytter overskriften OPSKRIFT PÅ SURDEJSBOLLER minimalt ned og væk fra menulinjen*/
+}
+
+#foldeEnDejId {
+  font-weight: bolder;
 }
 
 /* ____________________________________________________________________________________ */
@@ -189,9 +191,7 @@ h2 {
 
  /* Styling af inputfelternes og TILMELD-knappens størrelse og farver */
   #formSectionId input[type="text"], #formSectionId input[type="number"], #formSectionId input[type="email"] {
-
-  /* Ændrer baggrundsfarven */
-  background-color: var(--knapfarve);
+  background-color: var(--knapfarve); /* Ændrer baggrundsfarven */
   width: 75%; /* Bredden på inputfelterne */
 }
 
@@ -211,14 +211,12 @@ h2 {
   color: var(--skriftfarve);
   font-size: 17px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center; /* Placerer knappen i midten */
 }
 
 #tilmeldDigPId {
   text-align: center;
   margin: 5%; 
 }
-
 
 /* ____________________________________________________________________________________ */
 
@@ -227,8 +225,8 @@ h2 {
 .herClass {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold; /* Gør linket 'her!' tydeligt*/
-  text-decoration: none; /* Fjerner underline fra links */
-  color: inherit; /* Gør links sorte i stedte for blå */
+
+  color: inherit; /* Gør linket sort i stedet for blå */
 }
 
 #pId {
